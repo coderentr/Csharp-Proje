@@ -1,0 +1,24 @@
+﻿<span> Buraya Tıkla 
+    </span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $("span").css("color", "purple");
+    $("body span").css("display", "block").css("textAlign", "center");
+
+
+</script>
+
+<div>
+    <p>Lorem <b class="mavi">ipsum</b> dolor sit amet</p>
+</div>
+<script>
+   $(".mavi").css("color", "blue");
+</script>
+<span class="diviAc">Buraya tıkla</span>
+<div style="height:200px; background:blue; display:none;"></div>
+<script>
+   $(".diviAc").click(function () {
+       $("span + div").toggle("fast");
+       //slow | normal | fast
+   });
+</script>

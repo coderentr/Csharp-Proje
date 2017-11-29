@@ -1,0 +1,27 @@
+﻿<script>
+    function UyariVer() {
+        alert("UYARI");
+
+    }
+
+    UyariVer();
+
+
+
+    function Karsila(isim, soyisim) {
+        if (soyisim != undefined || isim != null) 
+            alert("merhaba" + isim + " " + soyisim);
+        else
+        
+            alert("merhaba"+isim);
+            
+
+        }
+
+    Karsila();
+    Karsila("cigdem");// undefined bıraktım 
+    Karsila("Cigdem", null);// bilinçli olarak null attım
+    Karsila("cigdem", "karahuseyin");
+    
+
+</script>
