@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kutuphane.BLL", "Kutuphane.BLL\Kutuphane.BLL.csproj", "{C20C1252-A8EB-412B-9B1A-5C3885C53FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kutuphane.DAL", "Kütüphane.DAL\Kutuphane.DAL.csproj", "{34381EAC-02B2-4234-812B-50ACDFA40A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kutuphane.UI", "Kutuphane.UI\Kutuphane.UI.csproj", "{50D930DB-0B14-4F81-ABD8-C264823E9922}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C20C1252-A8EB-412B-9B1A-5C3885C53FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20C1252-A8EB-412B-9B1A-5C3885C53FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20C1252-A8EB-412B-9B1A-5C3885C53FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20C1252-A8EB-412B-9B1A-5C3885C53FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34381EAC-02B2-4234-812B-50ACDFA40A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34381EAC-02B2-4234-812B-50ACDFA40A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34381EAC-02B2-4234-812B-50ACDFA40A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34381EAC-02B2-4234-812B-50ACDFA40A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D930DB-0B14-4F81-ABD8-C264823E9922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D930DB-0B14-4F81-ABD8-C264823E9922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D930DB-0B14-4F81-ABD8-C264823E9922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D930DB-0B14-4F81-ABD8-C264823E9922}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
