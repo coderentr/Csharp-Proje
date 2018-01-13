@@ -1,0 +1,30 @@
+﻿@model PublicUI.Models.Departman
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/AdminUI/Views/_AdminLayout.cshtml";
+}
+<h3>Silmek istediğinize emin misiniz ?</h3>
+<div>
+    <h4>Departman</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Listeye Git", "Index")
+        </div>
+    }
+</div>

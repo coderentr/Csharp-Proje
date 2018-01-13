@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PublicUI.Models.Calisan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_UserLayout.cshtml";
+}
+<br />
+<h4>Çalışanlar</h4>  
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefon)
+        </td>
+        <td>
+            @Html.ActionLink("Detay", "Details", new { id=item.ID })
+        </td>
+    </tr>
+}
+</table>
+

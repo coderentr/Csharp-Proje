@@ -1,0 +1,28 @@
+﻿@model PublicUI.Models.Yonetici
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/AdminUI/Views/_AdminLayout.cshtml";
+}
+<br />
+<br />
+<br />
+
+<div>
+    <h4>Yonetici</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdSoyad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Güncelle", "Edit", new { id = Model.YoneticiID }) |
+    @Html.ActionLink("Listeye Git", "Index")
+</p>

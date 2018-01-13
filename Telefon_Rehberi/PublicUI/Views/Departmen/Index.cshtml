@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PublicUI.Models.Departman>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/AdminUI/Views/_AdminLayout.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Adi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adi)
+        </td>
+        <td>
+            @Html.ActionLink("Güncelle", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Detay", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Sil", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

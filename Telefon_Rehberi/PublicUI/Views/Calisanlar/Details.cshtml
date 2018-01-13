@@ -1,0 +1,51 @@
+﻿@model PublicUI.Models.Calisan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_UserLayout.cshtml";
+}
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Ad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefon)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Departman.Adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departman.Adi)
+        </dd>
+        <dt>
+           Yöneticisi
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Yonetici.AdSoyad)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Listeye Geri Git", "Index")
+</p>

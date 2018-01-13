@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PublicUI.Models.Calisan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/AdminUI/Views/_AdminLayout.cshtml";
+}
+<br />
+<br />
+<br />
+<br />
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departman.Adi)
+        </th>
+        <th>
+           Yöneticisi
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departman.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yonetici.AdSoyad)
+            </td>
+            <td>
+                @Html.ActionLink("Güncelle", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Detay", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Sil", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

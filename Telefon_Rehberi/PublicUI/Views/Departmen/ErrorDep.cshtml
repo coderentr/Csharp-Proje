@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ErrorDep";
+    Layout = "~/AdminUI/Views/_AdminLayout.cshtml";
+}
+
+<div class="error-message">
+    @if (ViewBag.Message != null)
+    {
+        <h3>@ViewBag.Message</h3>
+    }
+</div>
+<div>
+    @Html.ActionLink("Listeye Git", "Index")
+</div>
